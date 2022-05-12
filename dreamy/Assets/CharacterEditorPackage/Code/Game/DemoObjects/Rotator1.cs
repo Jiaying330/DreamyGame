@@ -29,13 +29,13 @@ public class Rotator1 : MonoBehaviour
         {
             movingClockwise = false;
             // rightAngle = Random.Range(0.1f, 0.8f);
-            Debug.Log("movingClockwise = " + movingClockwise);
+            // Debug.Log("movingClockwise = " + movingClockwise);
         }
         if(transform.rotation.z < leftAngle)
         {
             movingClockwise = true;
             // leftAngle = Random.Range(-0.1f, -0.8f);
-            Debug.Log("movingClockwise = " + movingClockwise);
+            // Debug.Log("movingClockwise = " + movingClockwise);
             // Debug.Log(rightAngle);
         }
     }

@@ -14,6 +14,7 @@ public class DeathTrigger : MonoBehaviour {
                 // {
                 //     InSceneLevelSwitcher.Get().Respawn();
                 // }
+                // StartCoroutine(waitForSound("Death"));
                 SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
         ControlledCapsuleCollider controlledCapsuleCollider = a_Collider.GetComponent<ControlledCapsuleCollider>();
@@ -28,8 +29,25 @@ public class DeathTrigger : MonoBehaviour {
                 // {
                 //     InSceneLevelSwitcher.Get().Respawn();
                 // }
+                // StartCoroutine(waitForSound("Death"));
                 SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             }
         }
     }
+
+    // IEnumerator waitForSound(string sound)
+    // {
+    //     FindObjectOfType<AudioManager>().Play(sound);
+    //     Debug.Log(FindObjectOfType<AudioManager>().isPlaying(sound));
+
+    //     while(FindObjectOfType<AudioManager>().isPlaying(sound))
+    //     {
+    //         Debug.Log("in while loop : " + FindObjectOfType<AudioManager>().isPlaying(sound));
+    //         yield return null;
+    //     }
+        
+    //     // yield return new WaitWhile(() => FindObjectOfType<AudioManager>().isPlaying(sound));
+    //     Debug.Log("third " + FindObjectOfType<AudioManager>().isPlaying(sound));
+    //     SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    // }
 }
